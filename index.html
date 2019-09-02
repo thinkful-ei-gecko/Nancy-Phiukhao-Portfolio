@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt|Share+Tech|Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+   
+        <nav role="navigation" id='nav'>        
+            <ul class="nav-links" id='nav-links'>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+            </div>
+        </nav>
+
+
+    <div class="hero-container">
+            <header role="banner">
+                    <h1><span class="green">[</span>Hi there! <span class="newLine">I'm Chitchanok Phiukhao, a Fullstack Developer.</span></h1>
+            </header>
+
+            <a href="#about" class="seeWork">See My Work</a>
+    </div>
+
+
+    <main role="main">
+  
+
+
+        <section id="about" class="about-container">
+            <h2><span class="green">[</span>Who I am<span class="green">]</span></h2>
+            <div class="paragraphs">
+                <p>I graduated from the University of California, San Diego with a Bachelors of Science in Biology. 
+                        Before starting my journey to full stack developer(-hood), I was a Research Assistant at UCSDs Biochemistry 
+                        Department performing chemical quality assurance and reagent development. My excitement for coding comes 
+                        from its’ potential to create impactful applications. I’m always looking for opportunities to grow and 
+                        to grow in any opportunity. Ultimately, I want to advance health technology by 
+                        leveraging my biology background and technical experience.
+                        </p>
+                        <p><span class="passion">Things I'm passionate about:</span> knowledge, problem-solving, and creating a positive impact.</p>
+                        <p><span class="enjoy">Things I enjoy (besides coding):</span> traveling, content creating, and admiring quality animation.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="project-container">
+            <h2><span class="green">[</span>My Projects<span class="green">]</span></h2>
+            <h3>My Bookmarks App</h3>
+            <div class="screenshot-container">
+                
+                    <img class="fullscreenshot" src="img/BookmarkFullscreen.png" alt="Browser screenshot of My Bookmarks App">
+             
+               
+                    <img class= "mobilescreenshot" src="img/BookmarkMobile.png" alt="Mobile screenshot of My Bookmarks App">
+            </div>
+            <section role="app explanation">
+                <p class="p-explain">My Bookmarks application allows you to organize all of your favorite websites, articles, and publications. Users can<span class="green">save them, rate them,</span>and<span class="green">arrange them.</span></p>
+                <div class="projectLinks">
+                    <a href='https://github.com/thinkful-ei-gecko/Nancy-bookmarks-app' target="_blank">Github</a>
+                    <a href='https://thinkful-ei-gecko.github.io/Nancy-bookmarks-app/' target="_blank">Live View</a>
+                </div>
+                <p><span class="green">Built using: HTML, CSS, Javascript, jQuery</span></p>
+            </section>
+
+        </section>
+
+
+    </main>
+    <footer id="contact" role="content-info">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:nphiukhao@gmail.com"><img src="img/emailLogo-01.png" class="elogo" alt=""></a>
+            <a href="https://github.com/nphiukhao" target="_blank"><img src="img/githubLogo.png" class="ghlogo" alt=""></a>
+            <a href="https://www.linkedin.com/in/chitchanok-nancy-phiukhao-1aba90183/" target="_blank"><img src="img/linkedinLogo.png" class="linklogo" alt=""></a>
+        </div>
+
+        
+
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

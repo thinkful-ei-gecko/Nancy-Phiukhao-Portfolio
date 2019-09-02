@@ -1,0 +1,373 @@
+/*  
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Share Tech', sans-serif;
+font-family: 'Rokkitt', serif;
+  */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+
+/* -------------------------- Nav stuff -------------------------- */
+body {
+    overflow-x: hidden;
+}
+
+
+nav {
+    min-height: 7vh;
+    font-family: 'Share Tech Mono', monospace;
+    background-color:#258033;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+}
+
+.nav-links{
+    position: absolute;
+    top:7vh;
+    background-color:  #258033;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 93vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    
+}
+
+.nav-links li {
+    opacity: 0;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinksFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.nav-links li {
+    list-style: none;
+ }
+ .nav-links a {
+     text-decoration: none;
+     letter-spacing: 2px;
+     
+     font-size: 18px;
+     color: white;
+ }
+ 
+ .burger-container{
+     display: flex;
+     align-items: center; 
+ }
+ .burger{
+
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+ .burger div{
+    width: 27px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+
+/*---------------------------- Main page ------------------------ */
+
+.seeWork{
+    display: block;
+    font-size: 18px;
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+    color: #258033;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.1em;
+    cursor: pointer;
+    border-color: white;
+    background-color: #258033;
+    color: white;
+    margin-top: 1.5rem;
+    font-weight: 500;
+
+}
+
+.seeWork:hover {
+    border-color: #258033;
+    background-color: white;
+    color: #258033;
+    transition: all ease-in-out 300ms;
+}
+
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+ 
+}
+
+
+.newLine {
+    display: block;
+}
+
+header{
+    width: 80%;
+    font-size: .8rem;
+
+}
+
+
+/* -------------------------------- About me ----------------*/
+
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-family: 'Share Tech', sans-serif;
+    padding: 20px;
+}
+
+.green{
+    color: #258033;
+    padding: 10px;
+}
+.about-container, .project-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+p{
+    padding: 10px 30px;
+    font-family: 'Rokkitt', serif;
+    line-height: 25px;
+    letter-spacing: .8px;
+    width: 100%;
+}
+.passion, .enjoy{
+    color: #258033;
+}
+
+
+/* ------------------------ projects --------------------------*/
+img {
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.mobilescreenshot{
+    width: 40%;
+}
+
+
+h3 {
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    color: #258033;
+    margin: 15px 0;
+    padding: 5px;
+    border-bottom: 1px solid #258033;
+}
+
+.projectLinks{
+    width: 100%;
+}
+.projectLinks a {
+    text-decoration: none; 
+    padding: auto;
+    background-color: #258033;
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    font-family: 'Rokkitt', serif;
+    color: white;
+    padding: .4em .3em;
+    margin: 1em 1em;
+    letter-spacing: 1.1px;
+    border: solid 1.5px white;
+}
+.projectLinks a:hover {
+    border-color: #258033;
+    background-color: white;
+    color: #258033;
+    transition: all ease-in-out 300ms;
+}
+
+/* -------------------- footer --------------------------*/
+
+footer {
+    background-color: #258033;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ghlogo, .linklogo{
+  width: 40px;
+    }
+.elogo{
+    padding: 20px 5px;
+    width: 45px;
+}
+.ghlogo, .linklogo, .elogo{
+    margin: 1rem 1rem;
+
+}
+
+/* ------------------- media queries -------------------- */
+
+@media (min-width:650px) {
+
+    .burger{
+        display: none;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+    .nav-links{
+        top:7vh;
+        background-color:  #258033;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transform: translateX(0px);
+        height: 7vh;
+        position: static;
+        width: 100%;
+
+    }
+
+    .nav-links li {
+        opacity: 1;
+    }
+
+    .nav-links a { 
+        font-size: 18px;
+        color: white;
+    }
+
+    header{
+        font-size: 1.25rem;
+    }
+
+    p{
+        margin: 0;
+    }
+    .paragraphs{
+        width: 70%;
+        border: 2px solid #258033;
+    }
+  
+   .projectLinks a{
+       width: 20%;
+       padding: .6em .3em;
+
+   }
+   .elogo, .ghlogo, .linklogo{
+    width: 40px;
+    }
+   .p-explain{
+       width: 70%;
+       margin: auto;
+   }
+
+
+
+    
+
+
+}
+
+
+@media (min-width:950px){
+    .paragraphs{
+        width: 45%;
+    }
+
+    .seeWork {
+        width: 250px;
+        height: 55px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .elogo, .ghlogo, .linklogo{
+       width: 50px;
+       }
+    
+    .screenshot-container{
+        width: 100%;
+        display: inline-block;
+    }
+
+    
+    .mobilescreenshot, .fullscreenshot{
+     height: 450px;
+    width: auto;
+    }
+
+    .projectLinks a{
+        width: 15%;
+        padding: .6em .3em;
+ 
+    }
+
+ 
+}
+@media (min-width:1230px){
+    .mobilescreenshot, .fullscreenshot{
+        height: 550px;
+       width: auto;
+       }
+}
+
